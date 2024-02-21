@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+/* root function is like the document html styling */
+:root{  
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --main-color: #c8815f;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem;
+
+
+} 
+/* .header{
+    position: fixed;
+    /* top: 0; */
+    /* z-index: 1030; /* to prevent the navbar getting covered up by other content  
+    width: 100%;
+    background:var(--text-color);
+    padding: 11px ;
+    box-shadow: 0px 0px 10px rgb(0 0 0 /10);
+    height: 100px;
+    color: black;
+} */ 
+
+/* Navigation Section */
+.first_part .logo{
+    width: 300px;
+}
+nav{
+    width: 100%; 
+}
+.first_part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.first_part a{
+   text-decoration: none;    
+   color: rgb(0, 0, 0);
+   opacity: 0.7;
+
+}
+.first_part a:hover{
+    color: red;
+    opacity: 1;
+}
+i{
+   font-size: 40px;
+   color: var(--main-color);
+   opacity: 0.9;
+}
+i:hover{
+    opacity: 1;
+    color: black;
+}
+.second_part{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.inside{
+    color: red;
+}
+.free_shipping{
+    padding: .5rem;
+    font-size: .8rem;
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+section{
+    padding: 100px 14%;
+}
+.home{
+  min-height: 100vh;
+  width: 100%;
+  background:url(./IMAGEs/pexels-monstera-production-6311693.jpg);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 1.4rem;
+}
+.home-text span{
+    font-size: var(--h2-font);
+}
+.home-text p{
+      font-size: var(--normal-font);
+      font-weight: 500;
+      margin-bottom: 3rem;
+      letter-spacing: .2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .35s ease;
+    text-decoration: none;
+}
+.btn:hover{
+    transform:translate(-5px);
+    background:var(--text-color);
+}
+.r
+header.sticky{
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgba(0 0 0/105);
+
+}
+
+.center-text{
+    text-align: center; 
+}
+.center-text h2{
+    font-size: var(--h3-font);
+}
+.featured-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    position: relative;
+    transition: all .35 ease;
+
+}
+.row img{
+    width: 70%;
+    height: auto;
+}
+.feat-text{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+.feat-text h5{
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: red;
+}
+.feat-text p{
+color: white;
+font-size: 15px;
+letter-spacing: 1px;
+font-weight: 400;
+}
+.row .arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 50px;   
+}
+.row .arrow i{
+    height: 35px;
+    width: 35px;
+    background: var(--bg-color);
+    border-radius: 60%;
+    font-size: 20px;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease;
+}
+.row:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+.row:hover i{
+    background: var(--main-color);
+    color: var(--bg-color);  
+}
+/* Summer Styling */
+.cta{
+    height: 70vh;
+    width: 100%;
+    background: url(./IMAGEs/pexels-harsh-kushwaha-1689731.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.cta-text h6{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin-bottom: 14px;
+    color: aqua;
+}
+.cta-text h4{
+    font-size: 3.3rem;
+    line-height:1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 30px;
+    color: white;  
+}
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+.box{
+    position: relative;
+    transition: all .40s ease;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.box h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;     
+}
+.box:hover{
+    transform: scale(.9) translateY(-5px);;
+    cursor: pointer;
+}
+/* brands logo styling */
+.brand{
+    padding: 50px 14px;
+}
+.brand-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    gap:2rem;
+    align-items: center;
+    justify-content: center   ;
+}
+.main img{
+    width: 65%;
+    height: auto;
+    opacity: .6;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+.main img:hover{
+    opacity: 1;
+}
+/* Contact Section */
+.contact{
+    background:var(--text-color);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap:5rem;
+}
+.main-contact h3{
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+    color: var(--bg-color);
+}
+.main-contact h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+.icons{
+    display: flex;
+    margin-top: 2rem;
+}
+.icons i{
+    font-size: 25px;
+    margin-right: 1rem;
+    color: #c8815f;
+    transition: all .35s ease;
+}
+.icons i:hover{
+    color: var(--bg-color);
+    transform:scale(1.1) translateY(-5px);
+}
+.main-contact li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.main-contact li a{
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: var(--normal-font);
+    font-weight: 600;
+    transition: all .35s ease;
+}
+.main-contact li a:hover{
+    transform: translateX(-8px);
+    color: var(--bg-color);
+}
+.last-text{
+    text-align: center;
+    padding: 20px;
+    background: var(--text-color);
+}
+.last-text p i{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.last-text p i span{
+    color: coral;
+}
+.last-text p i span:hover{
+    color: white;
+}
+.last-text p i:hover{
+    transform: translateY(-5px);
+    color: blueviolet;
+}
+@media screen(max-width: 1000px){
+    header{
+        padding:7px 4%;
+        transition: .2s;
+    }
+    nav{
+        padding:7px 4%;
+        transition: .2s;
+    }
+}
+  @media(max-width: 670px){
+    #menu-icon{
+        display: initial;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 280px;
+        height: 120vh;
+        background:red;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 150px 30px;
+      }  
+  }
+  

@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  input {
+    display: block;
+    width: 300px;
+    height: 42px;
+    padding: 3px 3px 3px 12px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  input:hover {
+    border: 2px solid coral;
+  }
+  
+  input:focus {
+    border: 2px solid black;
+  }
+  
+  .input1 {
+    margin-bottom: 22px;
+  }
+  
+  .input2 {
+    margin-bottom: 9px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 45px;
+  }
+  
+  header p {
+    letter-spacing: 2px;
+  }
+  
+  header p span a {
+    color: rgb(243, 16, 16);
+  }
+  header p span a:hover{
+    color: blue;
+  }
+  
+  form a {
+    display: block;
+    color: #adadad;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+  button:hover{
+    color: white;
+    background-color: red;
+  }
+  .pass{
+    color: blue;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  ul li a {
+    font-size: 30px;
+  }
+  
+  .icons {
+    text-align: center;
+  }
+  
+  .icons p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  i{
+    color: black;
+  }
